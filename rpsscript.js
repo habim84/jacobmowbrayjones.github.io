@@ -1,5 +1,5 @@
 let choice;
-window.onload = makeImageArray();
+//window.onload = makeImageArray();
 
 function makeImageArray() {
 console.log("script working");
