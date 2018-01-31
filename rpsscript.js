@@ -2,7 +2,7 @@ let choice;
 window.onload = makeImageArray();
 
 function makeImageArray() {
-
+console.log("script working");
 }
 
 function chooseImage(id) {
