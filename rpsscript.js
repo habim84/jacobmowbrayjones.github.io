@@ -1,8 +1,11 @@
 let choice;
-//window.onload = makeImageArray();
+let rockImage, paperImage, scissorImage;
 
-function makeImageArray() {
-console.log("script working");
+function prepareImages() {
+    console.log("script working");
+    rockImage = document.getElementById("image-rock");
+    paperImage = document.getElementById("image-paper");
+    scissorImage = document.getElementById("image-scissors");
 }
 
 function chooseImage(id) {
@@ -21,16 +24,31 @@ function chooseImage(id) {
 
 function hideOtherImages(choice) {
     if (choice == "rock") {
-        document.getElementById("image-paper").style.visibility = "hidden";
-        document.getElementById("image-scissors").style.visibility = "hidden";
-    }
-    else if (choice == "paper") {
-        document.getElementById("image-rock").style.visibility = "hidden";
-        document.getElementById("image-scissors").style.visibility = "hidden";
-    }
-      else if (choice == "scissors") {
-        document.getElementById("image-rock").style.visibility = "hidden";
-        document.getElementById("image-paper").style.visibility = "hidden";
+
+        Object.assign(scissorImage.style, {
+            visibility: "hidden",
+            width: "0"
+        });
+        Object.assign(paperImage.style, {
+            visibility: "hidden",
+            width: "0"
+        });
+    } else if (choice == "paper") {
+        Object.assign(scissorImage.style, {
+            visibility: "hidden",
+            width: "0"
+        });
+        Object.assign(rockImage.style, {
+            visibility: "hidden",
+            width: "0"
+        });
+    } else if (choice == "scissors") {
+       Object.assign(rockImage.style, {
+                visibility: "hidden",
+                width: "0"});
+         Object.assign(paperImage.style, {
+                visibility: "hidden",
+                width: "0"});
     }
     console.log(choice);
 }
