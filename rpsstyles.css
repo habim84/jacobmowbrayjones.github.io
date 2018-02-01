@@ -11,3 +11,11 @@
 .game-image{
     align-content: center;
 }
+#div-feedback{
+    text-align: center;
+    
+}
+#text-feedback{
+    font-size: 300px;
+    visibility: hidden;
+}
