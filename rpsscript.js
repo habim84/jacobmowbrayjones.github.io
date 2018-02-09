@@ -45,7 +45,7 @@ function prepareImages() {
     sImg.height = "400";
     sImg.id = "scissorImage";
     sImg.addEventListener('click', function () {
-        chooseImage("scissor");
+        chooseImage("scissors");
     });
     document.getElementById("banner-images").append(sImg);
 }
@@ -62,7 +62,7 @@ function computerChoice(humanChoice) {
         document.getElementById("scissorImage").width = "500";
         document.getElementById("feedback").innerHTML = "Scissors! Chop chop! You lose!";
 
-    } else if (humanChoice == "scissor") {
+    } else if (humanChoice == "scissors") {
         document.getElementById("scissorImage").width = "0";
         document.getElementById("rockImage").width = "500";
         document.getElementById("feedback").innerHTML = "Rock! I crush you!";
@@ -83,7 +83,7 @@ function chooseImage(id) {
             document.getElementById("scissorImage").width = "0";
             document.getElementById("rockImage").width = "0";
 
-        } else if (id == "scissor") {
+        } else if (id == "scissors") {
 
             document.getElementById("rockImage").width = "0";
             document.getElementById("paperImage").width = "0";
