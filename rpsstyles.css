@@ -16,6 +16,5 @@
     
 }
 #text-feedback{
-    font-size: 300px;
-    visibility: hidden;
+    visibility: visible;
 }
