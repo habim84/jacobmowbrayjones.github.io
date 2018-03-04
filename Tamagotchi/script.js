@@ -13,5 +13,9 @@ function animatePet() {
     console.log("my Move Pressed");
    var img = document.createElement("img");
     img.src="Images/picture.png"
+    img.height = "500px";
+    img.width = "500px";
+    
+    
     document.body.appendChild(img);
 }
